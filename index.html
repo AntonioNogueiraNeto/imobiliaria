@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Vendor CSS Files -->
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+
+<body>
+
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html">Ana Cecilia</a></h1>
+
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#carouselExampleInterval">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+                    <li><a class="nav-link scrollto" href="#servicos">Serviços</a></li>
+                    <li><a class="nav-link scrollto " href="#imoveis">Imoveis</a></li>
+
+                    <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+                    <li><a class="getstarted scrollto"
+                            href="https://wa.me/5531998964792?text=I'm%20Ola%20tenho%20interesse%20em%20comprar%20ou%20alugar%20um%20imovel">Whatapp</a>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- Slider -->
+
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="overlay-image" style="background-image: url(ft-1.jpg);"></div>
+                <div class="container">
+                    <h1>Ajudo você a encontrar o imóvel perfeito para comprar e alugar</h1>
+                    <h5>A mais de 5 anos trabalhando para te ajudar a encontrar o melhor imovel para você</h5>
+                    <a href="#" class="btn btn-lg btn-primary"> Entre em Contato</a>
+                </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+                <div class="overlay-image" style="background-image: url(ft-2.jpg);"></div>
+                <div class="container">
+                    <h1>Ajudo você a encontrar o imóvel perfeito para comprar e alugar</h1>
+                    <h5>A mais de 5 anos trabalhando para te ajudar a encontrar o melhor imovel para você</h5>
+                    <a href="#" class="btn btn-lg btn-primary"> Entre em Contato</a>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay-image" style="background-image: url(ft-3.jpg);"></div>
+                <div class="container">
+                    <h1>Ajudo você a encontrar o imóvel perfeito para comprar e alugar</h1>
+                    <h5>A mais de 5 anos trabalhando para te ajudar a encontrar o melhor imovel para você</h5>
+                    <a href="#" class="btn btn-lg btn-primary"> Entre em Contato</a>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- End Header -->
+
+
+
+    
+    <section class="banner-home section-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-12 background-color-gold padding-top-25 padding-bottom-25 ">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Finalidade </strong></label>
+                                            <select id="finalidade" name="finalidade" class="form-control" required>
+                                                <option value="0">
+                                                    Selecione...
+                                                </option>
+                                                <option value='lancamento'>
+                                                    Lançamento </option>
+                                                <option value='locacao'>
+                                                    Locação </option>
+                                                <option value='venda'>
+                                                    Venda </option>
+                                                <option value='vendidos'>
+                                                    Vendidos </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Tipo Imóvel </strong></label>
+                                            <select id="tipo" name="tipo" class="form-control" required>
+                                                <option value="0">
+                                                    Selecione...
+                                                </option>
+                                                <option value='apartamento'>
+                                                    APARTAMENTO </option>
+                                                <option value='area-privativa'>
+                                                    ÁREA PRIVATIVA </option>
+                                                <option value='casa'>
+                                                    CASA </option>
+                                                <option value='casa-em-condominio'>
+                                                    CASA EM CONDOMINIO </option>
+                                                <option value='chacara'>
+                                                    CHÁCARA </option>
+                                                <option value='cobertura'>
+                                                    COBERTURA </option>
+                                                <option value='fazenda'>
+                                                    FAZENDA </option>
+                                                <option value='loja'>
+                                                    LOJA </option>
+                                                <option value='lote'>
+                                                    LOTE </option>
+                                                <option value='lote-comercial'>
+                                                    LOTE COMERCIAL </option>
+                                                <option value='predio'>
+                                                    PREDIO </option>
+                                                <option value='sitio'>
+                                                    SÍTIO </option>
+                                                <option value='terreno'>
+                                                    TERRENO </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Cidade </strong></label>
+                                            <select id="cidade" name="cidade" class="form-control" required>
+                                                <option value="0">
+                                                    Selecione...
+                                                </option>
+                                                <option value='belo-horizonte'>
+                                                    Belo Horizonte </option>
+                                                <option value='betim'>
+                                                    Betim </option>
+                                                <option value='bonfim'>
+                                                    BONFIM </option>
+                                                <option value='brumadinho'>
+                                                    Brumadinho </option>
+                                                <option value='contagem'>
+                                                    Contagem </option>
+                                                <option value='crucilandia'>
+                                                    Crucilândia </option>
+                                                <option value='esmeraldas'>
+                                                    Esmeraldas </option>
+                                                <option value='ibirite'>
+                                                    Ibirité </option>
+                                                <option value='igarape'>
+                                                    Igarapé </option>
+                                                <option value='itaoca'>
+                                                    Itaoca </option>
+                                                <option value='lagoa-da-prata'>
+                                                    Lagoa da Prata </option>
+                                                <option value='mario-campos'>
+                                                    Mário Campos </option>
+                                                <option value='mateus-leme'>
+                                                    Mateus Leme </option>
+                                                <option value='nova-uniao'>
+                                                    Nova União </option>
+                                                <option value='oliveira'>
+                                                    Oliveira </option>
+                                                <option value='ouro-branco'>
+                                                    Ouro Branco </option>
+                                                <option value='rio-manso'>
+                                                    RIO MANSO </option>
+                                                <option value='rio-manso'>
+                                                    RIO MANSO </option>
+                                                <option value='sao-joaquim-de-bicas'>
+                                                    SÃO JOAQUIM DE BICAS </option>
+                                                <option value='sarzedo'>
+                                                    Sarzedo </option>
+                                                <option value='vespasiano'>
+                                                    Vespasiano </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Bairro </strong></label>
+                                            <select id="bairro" name="bairro" class="form-control" required>
+                                                <option value="0">
+                                                    Selecione...
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 margin-top-5">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Valor Mínimo </strong></label>
+                                            <input type="text" id="valor_minimo" name="valor_minimo"
+                                                class="form-control" placeholder="0,00" value="0,00">
+                                        </div>
+                                        <div class="col-md-3 margin-top-5">
+                                            <label
+                                                class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Valor Máximo </strong></label>
+                                            <input type="text" id="valor_maximo" name="valor_maximo"
+                                                class="form-control" placeholder="0,00" value="0,00">
+                                        </div>
+                                        <div
+                                            class="col-md-2 margin-top-35 margin-bottom-15 text-align-left padding-left-5 padding-right-5">
+                                            <label
+                                                class="font-color-gold font-weight-600 font-size-14 text-uppercase">...</label>
+                                            <button class="btn btn-lg btn-primary buscar" onclick="buscarImovelDetalhado()"><i
+                                                    class="fa fa-search"></i> Buscar</button>
+                                        </div>
+                                        <div class="col-md-4 margin-bottom-15 margin-top-5">
+                                            <div class="row">
+                                                <div class="col-md-7 padding-right-0">
+                                                    <label
+                                                        class="font-color-white font-weight-600 font-size-14 text-uppercase"><strong>Código </strong></label>
+                                                    <input type="text" id="referencia" name="referencia"
+                                                        class="form-control" placeholder=" Insira a Referência">
+                                                </div>
+                                                <div class="col-md-5 margin-top-30 text-align-right padding-left-0">
+                                                    <label
+                                                        class="font-color-gold font-weight-600 font-size-14 text-uppercase">...</label>
+                                                    <button class="btn btn-lg btn-primary buscar" onclick="buscarReferencia()"><i
+                                                            class="fa fa-search"></i> Buscar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Sobre Nós</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                    <p>
+                        A Anacecilia é uma empresa imobiliária dedicada a ajudar seus clientes a encontrar a casa ou propriedade dos seus sonhos. Desde a sua fundação, nossa equipe de profissionais qualificados tem trabalhado com compradores e vendedores de imóveis em todo o Brasil, ajudando-os a navegar no mercado imobiliário e a encontrar a propriedade perfeita que atenda às suas necessidades e orçamento.
+                    </p>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> Auxiliar os vendedores na melhor promoção de suas
+                            propriedades para atrair ofertas vantajosas</li>
+                        <li><i class="ri-check-double-line"></i>Anunciar imóveis por meio de uma variedade de técnicas
+                            de marketing</li>
+                        <li><i class="ri-check-double-line"></i> Avaliar os desejos dos clientes e a capacidade
+                            financeira para apresentar sugestões adequadas</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <p>
+                        Estamos comprometidos em oferecer um serviço personalizado e atencioso, com atendimento ao cliente excepcional e uma vasta experiência em lidar com as complexidades do mercado imobiliário. Nossos especialistas trabalham incansavelmente para garantir que nossos clientes recebam o melhor negócio possível, e sempre nos esforçamos para garantir que nossos clientes estejam satisfeitos com seus resultados.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+
+    <!-- ======= Foto Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container">
+
+            <div class="flexdirection ">
+
+                <div class="row team ">
+                    <div class="col-lg-6 col-md-8 d-flex align-items-stretch timecontainer">
+                        <div class="member" data-aos="fade-up" data-aos-delay="400" style="border-radius: 50%;">
+                            <div class="member-img ">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Ana Cecilia</h4>
+                                <span>Corretora de imoveis</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-6 d-flex align-items-center pt-4 pt-xl-0" data-aos="fade-center"
+                    data-aos-delay="300">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <div class="row team ">
+
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-emoji-smile"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="90"
+                                        data-purecounter-duration="1" class="purecounter"></span>
+                                    <p><strong>Clientes Satisfeitos</strong> na conquista de venda ou aquisição de
+                                        imoveis</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-clock"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="10"
+                                        data-purecounter-duration="1" class="purecounter"></span>
+                                    <p><strong>Anos de experiencia</strong> atuando no mercado imobiliário</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-award"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="2"
+                                        data-purecounter-duration="1" class="purecounter"></span>
+                                    <p><strong>Premios</strong> de melhor imobiliaria de Betim</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- End Foto Section -->
+
+
+    <style type="text/css">
+        .novomodelo .content {
+            transition: 0.3s;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            padding: 15px;
+        }
+
+        .novomodelo .content {
+            transition: 0.3s;
+            background-color: 0.3s;
+        }
+
+        .novomodelo .content:hover {
+            transform: translateY(-8px) !important;
+            box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.19)
+        }
+
+        .text-comp {
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+    <section class="" id="servicos">
+        <p style="text-align: center;"><span style="font-size: 28px;">Os melhores neg&oacute;cios Imobili&aacute;rio<b>
+                    VOC&Ecirc; </b>encontra<b> AQUI!!</b></span><br />
+            &nbsp;</p>
+
+        <p style="text-align: center;"><span style="color:#0a2f0c;"><span style="font-size:36px;"></span></span><span
+                style="font-size:20px;"></span></p>
+
+        <div class="container ">
+            <div class="btgrid novomodelo">
+                <div class="row row-1">
+                    <div class="col col-md-3">
+                        <div class="content">
+                            <p style="text-align: center;"><span style="font-size:16px;"><a href="#"><img
+                                            class="img-thumbnail"
+                                            src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/53371419-4.jpg?=40"
+                                            style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+                            <p style="text-align: center;"><strong>Avaliação de Ímoveis</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-3">
+                        <div class="content">
+                            <p style="text-align: center;"><span style="font-size:16px;"><a
+                                        data-target="#ExemploModalCentralizado" data-toggle="modal"> <img
+                                            class="img-thumbnail"
+                                            src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/598fe92c-3.jpg?=40"
+                                            style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+                            <p style="text-align: center;"><strong>Documentação</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-3">
+                        <div class="content">
+                            <p style="text-align: center;"><span style="font-size:16px;"><a href=""><img
+                                            class="img-thumbnail"
+                                            src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/318fb025-3.jpg?=40"
+                                            style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+                            <p style="text-align: center;"><strong>Pericia Imobiliária</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-3">
+                        <div class="content">
+                            <p style="text-align: center;"><span style="font-size:16px;"><a
+                                        href="/Publicacao.aspx?id=180409"><img class="img-thumbnail"
+                                            src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/4c94ecc6-8.jpg?=40"
+                                            style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+                            <p style="text-align: center;"><strong>Simule seu Financiamento</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECTION CARD -->
+
+    <section>
+
+
+    </section>
+
+    <section id="imoveis" class="imoveis">
+        <div class="container">
+
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Imóveis</h2>
+                <p>nossos imóveis</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-12 d-flex justify-content-center">
+
+                </div>
+            </div>
+
+
+
+            <section class="imoveis" id="imoveis-card">
+
+                <div class="row">
+
+
+
+
+
+                    <div class="card-imovel " id="imoveis">
+                        <div class="foto-container" style="border-radius: 30px;">
+                            <img src="assets/img/imoveis/32/ap7.jpg" style="width: 288px; height: 200px" alt="">
+                            <div class="picturebadge">
+                                <p>Apartamento | Venda</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="info-container">
+                            <!-- <div class="bairro"> <span class="bi bi-house"></span> bairro</div> -->
+                            <div class="cidade"> <i class="bi bi-geo-alt-fill"></i>Betim - MG</div>
+                            <div class="titulo">
+                                <p>Imóvel alto padrao</p>
+                            </div>
+                            <div class="preco">R$36000.00</div>
+
+                        </div>
+
+                        <div class="info-house-container">
+                            <span class="garagem depedencia">
+                                <p>2</p> <i class="bi bi-car-front-fill"></i>
+                            </span>
+                            <span class="quartos depedencia">
+                                <p>3</p> <i class="bi bi-door-closed"></i>
+                            </span>
+                            <span class="banheiro depedencia">
+                                <p>1</p> <i class="bi bi-badge-wc-fill"></i>
+                            </span>
+                            <span class="area depedencia">
+                                <p>350m²</p> <i class="bi bi-arrows-fullscreen"></i>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="card-imovel " id="imoveis">
+                        <div class="foto-container" style="border-radius: 30px;">
+                            <img src="assets/img/imoveis/32/ap7.jpg" style="width: 288px; height: 200px" alt="">
+                            <div class="picturebadge">
+                                <p>Apartamento | Venda</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="info-container">
+                            <!-- <div class="bairro"> <span class="bi bi-house"></span> bairro</div> -->
+                            <div class="cidade"> <i class="bi bi-geo-alt-fill"></i>Betim - MG</div>
+                            <div class="titulo">
+                                <p>Imóvel alto padrao</p>
+                            </div>
+                            <div class="preco">R$36000.00</div>
+
+                        </div>
+
+                        <div class="info-house-container">
+                            <span class="garagem depedencia">
+                                <p>2</p> <i class="bi bi-car-front-fill"></i>
+                            </span>
+                            <span class="quartos depedencia">
+                                <p>3</p> <i class="bi bi-door-closed"></i>
+                            </span>
+                            <span class="banheiro depedencia">
+                                <p>1</p> <i class="bi bi-badge-wc-fill"></i>
+                            </span>
+                            <span class="area depedencia">
+                                <p>350m²</p> <i class="bi bi-arrows-fullscreen"></i>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="card-imovel " id="imoveis">
+                        <div class="foto-container" style="border-radius: 30px;">
+                            <img src="assets/img/imoveis/32/ap7.jpg" style="width: 288px; height: 200px" alt="">
+                            <div class="picturebadge">
+                                <p>Apartamento | Venda</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="info-container">
+                            <!-- <div class="bairro"> <span class="bi bi-house"></span> bairro</div> -->
+                            <div class="cidade"> <i class="bi bi-geo-alt-fill"></i>Betim - MG</div>
+                            <div class="titulo">
+                                <p>Imóvel alto padrao</p>
+                            </div>
+                            <div class="preco">R$36000.00</div>
+
+                        </div>
+
+                        <div class="info-house-container">
+                            <span class="garagem depedencia">
+                                <p>2</p> <i class="bi bi-car-front-fill"></i>
+                            </span>
+                            <span class="quartos depedencia">
+                                <p>3</p> <i class="bi bi-door-closed"></i>
+                            </span>
+                            <span class="banheiro depedencia">
+                                <p>1</p> <i class="bi bi-badge-wc-fill"></i>
+                            </span>
+                            <span class="area depedencia">
+                                <p>350m²</p> <i class="bi bi-arrows-fullscreen"></i>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="card-imovel " id="imoveis">
+                        <div class="foto-container" style="border-radius: 30px;">
+                            <img src="assets/img/imoveis/32/ap7.jpg" style="width: 288px; height: 200px" alt="">
+                            <div class="picturebadge">
+                                <p>Apartamento | Venda</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="info-container">
+                            <!-- <div class="bairro"> <span class="bi bi-house"></span> bairro</div> -->
+                            <div class="cidade"> <i class="bi bi-geo-alt-fill"></i>Betim - MG</div>
+                            <div class="titulo">
+                                <p>Imóvel alto padrao</p>
+                            </div>
+                            <div class="preco">R$36000.00</div>
+
+                        </div>
+
+                        <div class="info-house-container">
+                            <span class="garagem depedencia">
+                                <p>2</p> <i class="bi bi-car-front-fill"></i>
+                            </span>
+                            <span class="quartos depedencia">
+                                <p>3</p> <i class="bi bi-door-closed"></i>
+                            </span>
+                            <span class="banheiro depedencia">
+                                <p>1</p> <i class="bi bi-badge-wc-fill"></i>
+                            </span>
+                            <span class="area depedencia">
+                                <p>350m²</p> <i class="bi bi-arrows-fullscreen"></i>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+        <div class="contact-container-div">
+            <div class="overlay-contact">
+                <div class="container">
+
+                    <div class="section-title" data-aos="fade-up">
+                        <h2 id="contato-titulo">Contato</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-about">
+                                <h3>Entre em contato</h3>
+                                <p>Se você precisar entrar em contato conosco, pode usar o formulário de
+                                    contato em
+                                    nosso
+                                    site
+                                    ou enviar um e-mail para o endereço que está disponível na seção de
+                                    contato. Teremos
+                                    prazer
+                                    em responder às suas perguntas e ajudá-lo da melhor maneira possível.
+                                    Nos encontre
+                                    tambem
+                                    nas redes sociais.</p>
+                                <div class="social-links">
+                                    <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="" class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="" class="instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                            <div class="info">
+                                <div>
+                                    <i class="ri-map-pin-line"></i>
+                                    <p>
+                                        Betim - MG
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <i class="ri-mail-send-line"></i>
+                                    <p>
+                                        teste@teste.com.br
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <i class="ri-phone-line"></i>
+                                    <p>
+                                        (31)9999999999
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                            <form action="./enviar-email.php" method="post" name="enviar-email" role="form"
+                                class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="nome" class="form-control" id="name" placeholder="Seu nome"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Seu e-mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="assunto" id="subject"
+                                        placeholder="Assunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Mensagem"
+                                        required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Carregando...</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Sua mensagem foi enviada. Muito Obrigado!
+                                    </div>
+                                </div>
+                                <div class="text-center"><button type="submit" name="submit">Enviar
+                                        Mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
