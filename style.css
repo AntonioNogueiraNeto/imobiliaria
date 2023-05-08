@@ -1741,7 +1741,7 @@ body {
   
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
   .container-card-imoveis{
     display: grid;
     grid-template-columns: repeat(1, 300px);
