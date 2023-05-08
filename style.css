@@ -1593,6 +1593,7 @@ body {
   }
 
   .card-imovel{
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.7);
@@ -1721,3 +1722,56 @@ body {
 #contato-titulo {
   color: white;
 }
+
+
+.container-card-imoveis{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 820px) {
+  .container-card-imoveis{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  
+}
+
+@media screen and (min-width: 414px) {
+  .container-card-imoveis{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 820px) {
+  .card-servicos{
+    height: 256px;
+  }
+  
+}
+
+
+@media screen and (max-width: 450px) {
+  .card-servicos{
+    height: 256px;
+  }  
+  
+}
+
+@media screen and (max-width: 414px) {
+  .flexdirection {
+    flex-direction: column;
+  }
+}
+
