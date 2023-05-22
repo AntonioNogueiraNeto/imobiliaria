@@ -1,0 +1,2370 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" /><link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet" /><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" /><link rel="stylesheet" href="https://www.c2tiapps.com/Styles/Geral.css" /><link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet" /><link href="https://www.c2tiapps.com/Utilitarios/lightbox/css/lightbox.css" rel="stylesheet" /><link href="https://www.c2tiapps.com/Styles/animate.css" rel="stylesheet" /><link href="https://www.c2tiapps.com/sites/028/Styles/hover-min.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css" /><link id="ctl00_favicon" rel="shortcut icon" type="image/x-icon" href="https://cache2net.com/Repositorio/6436/Logo/favicon.png" /><link href="https://www.c2tiapps.com/sites/028/Styles/StyleSheet.css" rel="stylesheet" /><link href="https://www.c2tiapps.com/Styles/Templates.css" rel="stylesheet" /><link href="https://www.c2tiapps.com/Styles/RemakeBootstrap4.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="//code.jivosite.com/widget/shJWuZnUse" async></script><meta name="description" /><meta property="og:title" content="TR Imobiliária" /><meta property="twitter:title" content="TR Imobiliária" /><meta property="og:url" content="http://imobiliariatr.com.br" /><meta property="twitter:url" content="http://imobiliariatr.com.br" /><meta property="og:type" content="website" /><meta property="og:image" content="https://cache2net.com/Repositorio/6436/Logo/99581a57-c.png" /><meta property="twitter:image" content="https://cache2net.com/Repositorio/6436/Logo/99581a57-c.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="800" /><meta property="og:image:height" content="600" /><meta property="twitter:card" content="summary_large_image" /><title>
+	TR Imobiliária
+</title></head>
+<body>
+    
+
+    <style type='text/css'>.row-filtro-tipoImovel .advanced-search__title{
+display:none;
+}
+
+.layer-destaque{
+display:none!important;
+}
+
+.bx-mvl-tipo-imovel{
+  position: absolute;
+    top: 5px;
+    background: #833739;
+    padding: 5px;
+    min-height: auto!important;
+    left: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+#imgimovel .img-item{
+    height: 450px;
+}
+ .carousel-indicators2 li{
+    text-indent: initial;
+    height: auto!important;
+      width: 100%;
+   cursor:pointer;
+}
+ .carousel-indicators2 li img{
+width:100%;
+}
+ .carousel-indicators2{
+   list-style: none;
+    padding: 0px;
+    display: flex;
+margin: 0px!important;
+  position: inherit!important;
+}</style>
+<script type='text/javascript'>$(document).ready(function(){$('.lista-imoveis .box-imovel').addClass('col-xl-4').removeClass('col-xl-3');
+
+$('.box-galeria').before('<div class="col-12"><div id="imgimovel" class="carousel slide" data-ride="carousel"><div class="carousel-inner"></div><a class="carousel-control-prev" href="#imgimovel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#imgimovel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a></div><ol class="carousel-indicators2"></ol></div>');
+
+var i = 0;
+$('.box-galeria .item').each(function(){
+  $('.carousel-indicators2').append('<li data-target="#imgimovel" data-slide-to="' + i + '"><img src="' + $(this).find('.cboxElement').attr('href') + '"></li>');
+  $('#imgimovel .carousel-inner').append('<div class="carousel-item">' + $(this).html() + '</div>');
+  i++;
+});
+$('.box-galeria').hide();
+$('#imgimovel .carousel-inner .carousel-item:first-child, #imgimovel .carousel-indicators li:first-child').addClass('active');
+
+$('#galeria').removeClass('col-lg-6').addClass('col-lg-8');
+$('#detalhes').removeClass('col-lg-6').addClass('col-lg-4');
+
+$('.filtro').slideToggle().before('<div style="text-align:center;background:#8b8b8b"><div class="advanced-search__title mt-5 pb-4" style="margin-top: 0px!important;padding-top: 3rem!important;">Encontre aqui seu imóvel ideal!</div><span class="btn btn-elegant" onclick="$(\'.filtro\').slideToggle()">Pesquisar imóveis</span></div>')
+                });
+            </script>
+<style>
+  
+  #at4-share{
+  display:none!important;
+  }
+  
+  /*COR HIPERLINK ENDERECO SUPERIOR*/
+  body > header:nth-child(8) > div.container.pt-3.pb-3 > div > div.col-md-9.header__info.d-none.d-sm-block > div.row.align-items-center.pb-2 > div.col-12.col-md-4.text-center > div > div.col-9.col-md-9.text-left > a{
+  color:#000;
+  }
+  
+  
+  /*COR FOOTER*/
+  body > footer > div > div.footer__bootombar.pb-2.pt-2{
+  background: #833739;
+    color: #fff;
+  }
+  
+    /*campo de filtro*/
+  .filtro{
+        background-image: url('https://www.cache2net.com//Repositorio/6436/Slides/665ddc18-e.jpg')!important;
+        background-size: cover!important;
+        background-attachment: fixed!important;
+        background-repeat: no-repeat!important;
+        background-position: center; 
+    color:#fff;
+}
+  
+  /*FOTO FOOTER*/
+  footer {
+    background: url(https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+     
+    
+    /*BOTAO BUSCA*/
+body > div.filtro > div > div:nth-child(3) > div > button{
+    background-color: #6a2729!important;
+    color: #fff!important;
+}
+    
+    .btn-info {
+    background-color: #6a2729!important;
+    color: #fff!important;
+}
+  
+  /*SEJA BEM VINDO*/
+body > header:nth-child(8) > div.header__topbar > div{
+  font-size: 20px!important;
+    font-weight: 500!important;
+  }
+  
+  body > header:nth-child(9) > div.header__topbar > div > div > div.col.col-md-8{
+    font-size: 20px!important;
+    font-weight: 500!important;
+  }
+.header__topbar .icones-sociais-topo > .social {
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px 3px 0px;
+}
+ .icones-sociais-topo > .social a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   color:#fff!important;
+}
+</style>
+<script>
+  $(function(){
+    var rede_social = $('.icones-sociais-topo').html();
+    var bandeira = $('.header__topbar .text-right').html();
+    
+    $('.icones-sociais-topo').hide().after('<div class="bandeiras_traducao">' + bandeira + '</div>');
+    $('.header__topbar .text-right').hide().after('<div class="col col-md-4 text-right"><div class="icones-sociais-topo">' + rede_social + '</div>');
+    
+      $('body > footer > div > div.footer__mainbar.container.pt-3.pb-3 > div.row.footer___mainbar-dados > div:nth-child(2) > div.footer__title').text("Traduções");
+    
+  });
+  
+
+</script>
+
+<!-- NÃO DELETE O COMENTÁRIO ABAIXO -->
+<!-- VERIFICATION-CODE-OK -->
+<script type="text/javascript">
+    var telefone1 = "";
+    var telefone2 = "";
+    var email1 = "imobiliaria.tr@gmail.com";
+    var email2 = "";
+    var logo = "https://cache2net.com/Repositorio/6436/Logo/99581a57-c.png";
+    var emp = "6436";
+</script>
+
+<div id="ctl00_PluginsContainer_PanelPlugins">
+	
+
+
+<style>
+    .btnZap {
+        position: fixed;
+        left:20px; bottom:20px; z-index: 999999999;
+    }
+
+        .btnZap:hover {
+            cursor: pointer;
+        }
+
+    @keyframes whatsapp-anim {
+        0% {
+            transform: scale(1);
+        }
+
+        20% {
+            transform: scale(0.9);
+        }
+
+        40% {
+            transform: scale(1.1);
+        }
+
+        60% {
+            transform: scale(1);
+        }
+
+        80% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script async type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+<script>
+    var zap_telefone = '5531998872400';
+    var zap_mensagem = 'Olá!!!';
+    var zap_exibirPulsar = eval(('True').toLowerCase());
+    var zap_apresentarContato = eval(('False').toLowerCase());
+
+    function detectarDispositivoPrincipal() {
+       let linkRedirecionamentoWhatsapp = "";
+
+        if (zap_apresentarContato) {
+            linkRedirecionamentoWhatsapp = ('https://wa.me/' + zap_telefone + '?text=' + zap_mensagem);
+        }
+        else {
+            if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+                linkRedirecionamentoWhatsapp = ('https://api.whatsapp.com/send?phone=' + zap_telefone + '&text=' + zap_mensagem);
+            } else {
+                linkRedirecionamentoWhatsapp = ('https://web.whatsapp.com/send?phone=' + zap_telefone + '&text=' + zap_mensagem);
+            }
+        }
+
+        if (typeof GoogleAds_HashWhatsapp != "undefined" && GoogleAds_HashWhatsapp.length > 0) {
+            GoogleAds_gtag_report_conversion(linkRedirecionamentoWhatsapp, GoogleAds_HashWhatsapp);
+        } else {
+            window.open(linkRedirecionamentoWhatsapp, '_blank');
+        }
+    }
+</script>
+<span id="whats_flutuante"></span>
+<script>
+    $('#whats_flutuante').append('<div class="btnZap">' +
+        '<span onclick="javascript:detectarDispositivoPrincipal()">' +
+        (zap_exibirPulsar ?  '<section class="tada infinite animated" data-wow-duration="2s" style="z-index: 999999999; visibility: visible; animation-duration: 2s; animation-name: whatsapp-anim; color: #fff;"><img loading="lazy" alt="WhatsApp" src="https://www.c2tiapps.com//Plugins/WhatsappIcon/imagens/whats1.png" style="max-width: 80px;"/></section>'
+        : '<section style="z-index: 999999999; visibility: visible; color: #fff;"><img loading="lazy" src="https://www.c2tiapps.com//Plugins/WhatsappIcon/imagens/whats1.png" style="max-width: 80px;" alt="WhatsApp"/></section>'
+        ) +
+        '</span>' +
+        '</div>');
+</script>
+
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Acomppanhamento Global de todos os Sites criados na C2TI -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MYFPHRXEH"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5MYFPHRXEH');
+</script>
+
+
+
+    <form name="aspnetForm" method="post" action="./Index.aspx?emp=6436&amp;alternativo=F" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NTQ2NDYzNzdkZMnE9xlLvTcgHL7xx6eIfS537NXn9pfGm6aq1rgBuCr3" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3937C7B5" />
+</div>
+        
+    </form>
+    <div class="style-extra">
+        <style>
+            .header__topbar {background: #833739;}header {}.menu-navbar, .nav-search .btn-pesquisar {background: #833739;}.menu-navbar > li > a{}nav.navbar .dropdown-menu {}nav.navbar .dropdown-menu li:hover {}.filtro {}.filtro button {}#nav-main .advanced-search select {background-color: rgba(255, 255, 255, 0.3);}.box-imovel {}.box-imovel .img-imovel > .layer-destaque {background: #833739;color: #fff;}.title-tipoImoveis, .imovel-col-border-bottom, .footer-tipoImoveis:after {color: #833739;}footer {}footer > .camada {background: ;background: linear-gradient(#74747496, #ba8d8d94);;}body {background: #fbfbfb;}
+        </style>
+    </div>
+
+
+    <header class="">
+        <div class="header__topbar">
+            <div class="container pt-1 pb-1">
+                <div class="row align-items-center">
+                    <div class="col col-md-8">
+                        Seja bem vindo!
+                    </div>
+                    <div class="col col-md-4 text-right">
+                        <a href="#" onclick="doGTranslate('pt|pt');return false;" title="Português" style="text-decoration: none;" aria-label="Tradução">
+                            <img src="https://www.c2tiapps.com/sites/028/img/bra.webp" height="30" width="30" alt="Português" loading="lazy"/>
+                        </a>
+                        <a href="#" onclick="doGTranslate('pt|it');return false;" title="Italian" style="text-decoration: none;" aria-label="Tradução">
+                            <img src="https://www.c2tiapps.com/sites/028/img/ita.webp" height="30" width="30" alt="Italian" loading="lazy" />
+                        </a>
+                        <a href="#" onclick="doGTranslate('pt|en');return false;" title="English" style="text-decoration: none;" aria-label="Tradução">
+                            <img src="https://www.c2tiapps.com/sites/028/img/usa.webp" height="30" width="30" alt="English" loading="lazy" />
+                        </a>
+                        <a href="#" onclick="doGTranslate('pt|es');return false;" title="Spanish" style="text-decoration: none;" aria-label="Tradução">
+                            <img src="https://www.c2tiapps.com/sites/028/img/esp.webp" height="30" width="30" alt="Spanish" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-3 pb-3">
+            <div class="row align-items-center">
+                <div class="col-md-3 header__logo text-center">
+                    <a href="/" aria-label="Logo">
+                        <img class="logo" src="https://cache2net.com/Repositorio/6436/Logo/99581a57-c.png" alt="Logo" loading="lazy" />
+                    </a>
+                </div>
+                <div class="col-md-9 header__info d-none d-sm-block">
+                    <div class="row align-items-center pb-2">
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="row align-items-center">
+                                <div class="col-3 col-md-3 text-right">
+                                    <span class="header__icon">
+                                        <i class="fa fa-map-marked-alt"></i>
+                                    </span>
+                                </div>
+                                <div class="col-9 col-md-9 text-left">
+                                    <span class="header__title">Endereço</span><br />
+                                    <a href = "https://www.google.com/maps/place/R.+Nicar%C3%A1gua,+630+-+Penha,+Rio+de+Janeiro+-+RJ,+21020-050/@-22.8379446,-43.2802301,17z/data=!3m1!4b1!4m6!3m5!1s0x997b97458fa9c9:0x6bfe3ada27f00c37!8m2!3d-22.8379446!4d-43.2802301!16s%2Fg%2F11c12lr3wf">Rua Nicarágua nº 630, Bloco 02, Sala 708, Penha, Rio de Janeiro, Cep: 21.020-050, Condomínio Faces Office, Mall e Residencial. </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 text-center">
+                            <div class="row align-items-center">
+                                <div class="col-3 col-md-3 text-right">
+                                    <span class="header__icon">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                </div>
+                                <div class="col-9 col-md-9 text-left">
+                                    <span class="header__title">Telefone</span><br />
+                                    (21) 98037-2416<br>(21) 98620-4325<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 text-center">
+                            <div class="row align-items-center">
+                                <div class="col-3 col-md-3 text-right">
+                                    <span class="header__icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <div class="col-9 col-md-9 text-left">
+                                    <span class="header__title">E-mail</span><br />
+                                    imobiliaria.tr@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row nav-search">
+                        <div class="col-md-12">
+                            <input class="txt_pesquisar_principal form-control form-control-sm" placeholder="Pesquise aqui seu imóvel" onkeydown="fireKeyDownEvent(event)" />
+                            <button class="btn btn-pesquisar btn-sm" onclick="pesquisarImoveisPesquisaPrincipal()" aria-label="Pesquisar Imóveis">
+                                <i class="fas fa-search-location"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class='nav-item'><a class='nav-link' target='_self' href='Publicacao.aspx?id=180279'>A Empresa</a><li class='nav-item'><a class='nav-link' target='_self' href='Publicacao.aspx?id=180280'>Nossos Serviços</a><li class='nav-item'><a class='nav-link' target='_self' href='Publicacao.aspx?id=180281'>Cadastrar Imóveis</a><li class='nav-item'><a class='nav-link' target='_self' href='https://venda-imoveis.caixa.gov.br/sistema/download-lista.asp'>Leilão</a><li class='nav-item'><a class='nav-link' target='_self' href='Publicacao.aspx?id=180409'>Parceiros</a><li class='nav-item'><a class='nav-link' target='_self' href='Contato.aspx'>Contato</a>    
+                    
+                </ul>
+            </div>
+            <!-- Collapsible content -->
+        </nav>
+    </div>
+    <header id="header-main">
+        <div id='carousel-main-website' class='carousel slide' data-ride='carousel'><ul class='carousel-indicators'><li data-target='#carousel-main-website' data-slide-to='0' class='active '></li><li data-target='#carousel-main-website' data-slide-to='1' class=' '></li></ul><div class='carousel-inner' role='listbox'><div class='carousel-item active '><img loading='eager'  alt ="... " class="img_slid" data-src="https://www.cache2net.com//Repositorio/6436/Slides/40f494ae-a.jpg?=1105995-2"> </div><div class='carousel-item  '><img loading='lazy'  alt ="... " class="img_slid" data-src="https://www.cache2net.com//Repositorio/6436/Slides/260b2a9e-0.jpg?=1105992-2"> </div></div><a class='carousel-control-prev' href='#carousel-main-website' data-slide='prev'>
+                            <span class='carousel-control-prev-icon'></span>
+                        </a>
+                        <a class='carousel-control-next' href='#carousel-main-website' data-slide='next'>
+                            <span class='carousel-control-next-icon'></span>
+                        </a></div>
+    </header>
+    
+
+<style>
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 10px;
+        margin: 10px 0;
+        float: right;
+    }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.25);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            bottom: -5px;
+            box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, .4);
+            background-color: #f1f1f1;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #dee2e6;
+    }
+
+    input:focus + .slider {
+    }
+
+
+        input:focus + .slider:before {
+            box-shadow: 0 0 1px #007bff;
+        }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+</style>
+
+<style type="text/css">
+    .row-filtro-tipoImovel {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+
+        .row-filtro-tipoImovel .filtro-title {
+            margin: 0;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+    .filtro-title > div > span {
+        display: flex;
+        align-items: center;
+    }
+
+    .filtro-title .fas {
+        font-size: 20px;
+        margin-right: 4px;
+    }
+
+    .row-filtro-tipoImovel .filtro-title > div:nth-child(1) {
+        width: 75%;
+    }
+
+    .row-filtro-tipoImovel .filtro-title > div:nth-child(2) {
+        width: 25%;
+    }
+
+    @media screen and (min-width: 992px) {
+        .row-filtro-tipoImovel .box-unidade {
+            padding-top: 5px;
+            border-right: 1px solid rgba(230, 230, 230, 0.21);
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .row-filtro-tipoImovel .box-unidade {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+        }
+
+            .row-filtro-tipoImovel .box-unidade .filtro-title {
+                border-bottom: none;
+            }
+    }
+
+
+    .range-val {
+        font-size: 14px;
+        height: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .multipleRange {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 991px) {
+        .multipleRange {
+            width: 100%;
+            height: 68px;
+            transition: 0.3s;
+        }
+
+            .multipleRange.disabled {
+                height: 0px;
+                overflow: hidden;
+            }
+    }
+
+    .custom-range {
+        width: inherit;
+    }
+
+    .multipleRange.disabled .custom-range {
+        z-index: -1;
+        opacity: 0.4;
+        filter: grayscale(100);
+    }
+
+    @media screen and (max-width: 991px) {
+        .row-filtro-tipoImovel .box-buscar {
+            padding-top: 20px;
+        }
+    }
+
+    .row-filtro-tipoImovel .box-buscar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-sitePaternBlack {
+        background: rgba(0,0,0,0.5);
+    }
+
+        .btn-sitePaternBlack:hover {
+            background: rgba(0,0,0,0.8);
+        }
+</style>
+
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfEstados" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfEstados" class="hfEstados" value="[{&quot;nome&quot;: &quot;Rio de Janeiro&quot;, &quot;id&quot;: &quot;19&quot;}]" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfCidades" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfCidades" class="hfCidades" value="[{&quot;nome&quot;: &quot;Belford Roxo&quot;, &quot;id&quot;: &quot;587&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Rio de Janeiro&quot;, &quot;id&quot;: &quot;4204&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Arraial do Cabo&quot;, &quot;id&quot;: &quot;392&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;São Pedro da Aldeia&quot;, &quot;id&quot;: &quot;4857&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Cabo Frio&quot;, &quot;id&quot;: &quot;828&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Rio das Ostras&quot;, &quot;id&quot;: &quot;4201&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Nova Iguaçu&quot;, &quot;id&quot;: &quot;3330&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Mangaratiba&quot;, &quot;id&quot;: &quot;2893&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Niterói&quot;, &quot;id&quot;: &quot;3271&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;São João de Meriti&quot;, &quot;id&quot;: &quot;4700&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Duque de Caxias&quot;, &quot;id&quot;: &quot;1637&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Araruama&quot;, &quot;id&quot;: &quot;350&quot;, &quot;id_estado&quot;: &quot;19&quot;},{&quot;nome&quot;: &quot;Macaé&quot;, &quot;id&quot;: &quot;2826&quot;, &quot;id_estado&quot;: &quot;19&quot;}]" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfBairros" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfBairros" class="hfBairros" value="[{&quot;nome&quot;: &quot;Bairro das Graças&quot;, &quot;id&quot;: &quot;950&quot;, &quot;id_cidade&quot;: &quot;587&quot;},{&quot;nome&quot;: &quot;Bangu&quot;, &quot;id&quot;: &quot;965&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Bonsucesso&quot;, &quot;id&quot;: &quot;966&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Brás de Pina&quot;, &quot;id&quot;: &quot;1675&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Caiçara&quot;, &quot;id&quot;: &quot;947&quot;, &quot;id_cidade&quot;: &quot;392&quot;},{&quot;nome&quot;: &quot;Campo Grande&quot;, &quot;id&quot;: &quot;961&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Campo Redondo&quot;, &quot;id&quot;: &quot;937&quot;, &quot;id_cidade&quot;: &quot;4857&quot;},{&quot;nome&quot;: &quot;Centro&quot;, &quot;id&quot;: &quot;968&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Centro&quot;, &quot;id&quot;: &quot;984&quot;, &quot;id_cidade&quot;: &quot;828&quot;},{&quot;nome&quot;: &quot;Coelho Neto&quot;, &quot;id&quot;: &quot;1463&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Colégio&quot;, &quot;id&quot;: &quot;1102&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Copacabana&quot;, &quot;id&quot;: &quot;1103&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Costa Azul&quot;, &quot;id&quot;: &quot;939&quot;, &quot;id_cidade&quot;: &quot;4201&quot;},{&quot;nome&quot;: &quot;Curicica&quot;, &quot;id&quot;: &quot;1933&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Engenho da Rainha &quot;, &quot;id&quot;: &quot;969&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Era&quot;, &quot;id&quot;: &quot;987&quot;, &quot;id_cidade&quot;: &quot;3330&quot;},{&quot;nome&quot;: &quot;Extensão dos Bosque &quot;, &quot;id&quot;: &quot;940&quot;, &quot;id_cidade&quot;: &quot;4201&quot;},{&quot;nome&quot;: &quot;Figueira &quot;, &quot;id&quot;: &quot;948&quot;, &quot;id_cidade&quot;: &quot;392&quot;},{&quot;nome&quot;: &quot;Flamengo&quot;, &quot;id&quot;: &quot;2271&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Guadalupe &quot;, &quot;id&quot;: &quot;959&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Ibicui&quot;, &quot;id&quot;: &quot;952&quot;, &quot;id_cidade&quot;: &quot;2893&quot;},{&quot;nome&quot;: &quot;ICARAÍ&quot;, &quot;id&quot;: &quot;1702&quot;, &quot;id_cidade&quot;: &quot;3271&quot;},{&quot;nome&quot;: &quot;Ilha de Guaratiba &quot;, &quot;id&quot;: &quot;1908&quot;, &quot;id_cidade&quot;: &quot;2893&quot;},{&quot;nome&quot;: &quot;Ilha de Guaratiba &quot;, &quot;id&quot;: &quot;2003&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Ilha de Guaratiba &quot;, &quot;id&quot;: &quot;2004&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Ilha do Governador &quot;, &quot;id&quot;: &quot;953&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Irajá&quot;, &quot;id&quot;: &quot;970&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Itacuruça - Ilha da Gamboa&quot;, &quot;id&quot;: &quot;985&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Jacaré&quot;, &quot;id&quot;: &quot;964&quot;, &quot;id_cidade&quot;: &quot;828&quot;},{&quot;nome&quot;: &quot;Jardim America&quot;, &quot;id&quot;: &quot;954&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Jardim Botânico&quot;, &quot;id&quot;: &quot;1656&quot;, &quot;id_cidade&quot;: &quot;4700&quot;},{&quot;nome&quot;: &quot;Jardim Campomar&quot;, &quot;id&quot;: &quot;941&quot;, &quot;id_cidade&quot;: &quot;4201&quot;},{&quot;nome&quot;: &quot;Jardim Esperança&quot;, &quot;id&quot;: &quot;1332&quot;, &quot;id_cidade&quot;: &quot;828&quot;},{&quot;nome&quot;: &quot;Jardim Primavera&quot;, &quot;id&quot;: &quot;967&quot;, &quot;id_cidade&quot;: &quot;1637&quot;},{&quot;nome&quot;: &quot;LAGOA&quot;, &quot;id&quot;: &quot;1212&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Maria da Graça&quot;, &quot;id&quot;: &quot;1156&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Meier&quot;, &quot;id&quot;: &quot;1104&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Monte Alto&quot;, &quot;id&quot;: &quot;976&quot;, &quot;id_cidade&quot;: &quot;392&quot;},{&quot;nome&quot;: &quot;Olaria&quot;, &quot;id&quot;: &quot;971&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Outeiro&quot;, &quot;id&quot;: &quot;945&quot;, &quot;id_cidade&quot;: &quot;350&quot;},{&quot;nome&quot;: &quot;Parque Barão do Rio &quot;, &quot;id&quot;: &quot;1638&quot;, &quot;id_cidade&quot;: &quot;4700&quot;},{&quot;nome&quot;: &quot;Parque São Vicente&quot;, &quot;id&quot;: &quot;951&quot;, &quot;id_cidade&quot;: &quot;587&quot;},{&quot;nome&quot;: &quot;Penha&quot;, &quot;id&quot;: &quot;955&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Realengo&quot;, &quot;id&quot;: &quot;956&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Recreio dos Bandeirantes&quot;, &quot;id&quot;: &quot;1734&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Riviera &quot;, &quot;id&quot;: &quot;938&quot;, &quot;id_cidade&quot;: &quot;2826&quot;},{&quot;nome&quot;: &quot;Sabiá&quot;, &quot;id&quot;: &quot;1613&quot;, &quot;id_cidade&quot;: &quot;392&quot;},{&quot;nome&quot;: &quot;São Cristóvão &quot;, &quot;id&quot;: &quot;1503&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;SEPETIBA&quot;, &quot;id&quot;: &quot;1701&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Tamoios&quot;, &quot;id&quot;: &quot;936&quot;, &quot;id_cidade&quot;: &quot;828&quot;},{&quot;nome&quot;: &quot;Unamar- Tamoios&quot;, &quot;id&quot;: &quot;957&quot;, &quot;id_cidade&quot;: &quot;828&quot;},{&quot;nome&quot;: &quot;Vargem Grande&quot;, &quot;id&quot;: &quot;1743&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Vila Kosmos&quot;, &quot;id&quot;: &quot;958&quot;, &quot;id_cidade&quot;: &quot;4204&quot;},{&quot;nome&quot;: &quot;Vila Maria Helena&quot;, &quot;id&quot;: &quot;2143&quot;, &quot;id_cidade&quot;: &quot;1637&quot;}]" />
+
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfEstadoSelecionado" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfEstadoSelecionado" class="hfEstadoSelecionado" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfCidadeSelecionada" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfCidadeSelecionada" class="hfCidadeSelecionada" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfBairroSelecionado" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfBairroSelecionado" class="hfBairroSelecionado" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfLocacaoSelecionada" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfLocacaoSelecionada" class="hfLocacaoSelecionada" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfTipoImovelSelecionado" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfTipoImovelSelecionado" class="hfTipoImovelSelecionado" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfRangeSelecionado" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfRangeSelecionado" class="hfRangeSelecionado" />
+<input name="ctl00$ControlFiltroQtdDetalhesFull$hfFaseImovel" type="hidden" id="ctl00_ControlFiltroQtdDetalhesFull_hfFaseImovel" class="hfFaseSelecionado" />
+
+<div class="filtro">
+    <div class="container">
+        <div class="row row-filtro-tipoImovel">
+            <div class="col-12">
+                <div class="advanced-search__title mt-5 pb-4">
+                    Encontre aqui seu imóvel ideal!
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <!-- Quartos -->
+                    <style>
+                        .filtro-title-categoria {
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 1.1em;
+                            align-items: center;
+                            padding-bottom: 5px;
+                            margin-bottom: 5px;
+                        }
+
+                            .filtro-title-categoria hr {
+                                border-color: inherit;
+                                opacity: 0.3;
+                            }
+
+                        span.filtro-tipoImovel.tag {
+                            transition: 0.3s;
+                            background: rgba(0,0,0,0.15);
+                            border: 2px solid rgba(0,0,0,0);
+                            padding: 5px 15px;
+                            margin: 2.5px 5px 2.5px 0;
+                            display: inline-block;
+                            cursor: pointer;
+                        }
+
+                            span.filtro-tipoImovel.tag.ativo {
+                                background: inherit;
+                                border: 2px solid rgba(0,0,0,0.15);
+                            }
+
+                            span.filtro-tipoImovel.tag .fas.fa-check {
+                                margin-right: 0;
+                                font-size: 0px;
+                                transition: 0.3s;
+                            }
+
+                            span.filtro-tipoImovel.tag.ativo .fas.fa-check {
+                                display: inline;
+                                font-size: 14px;
+                                margin-right: 5px;
+                            }
+
+                            span.filtro-tipoImovel.tag:hover {
+                                padding: 5px 18px;
+                            }
+                    </style>
+                    <script>
+                        $(document).ready(function () {
+                            $(".filtro-title-categoria .filtro-tipoImovel.tag").click(function () {
+                                $(this).toggleClass("ativo");
+                            });
+                        });
+                    </script>
+                    <div class="col-12 filtro-title-categoria pt-4 pb-4">
+                        <div class="row">
+                            <div class="col-12" style="font-size: 12px"><i class="fas fa-clone"></i>&nbsp;Categorias</div>
+                            <div class="col-12">
+                                <hr />
+                                
+                                        <span class="filtro-tipoImovel tag" catim-id="429"><i class="fas fa-check"></i>Comercial </span>
+                                    
+                                        <span class="filtro-tipoImovel tag" catim-id="411"><i class="fas fa-check"></i>residencial</span>
+                                    
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3  box-unidade">
+                        <div class="filtro-title">
+                            <div>
+                                <span><i class="fas fa-bed"></i><span>&nbsp;Quartos</span></span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-basis">
+                            <div class="multipleRange disabled" id="QuartosSwitch">
+                                <span class="range-val">
+                                    <label class="range-val-min"></label>
+                                    <label class="range-val-junction"></label>
+                                    <label class="range-val-max"></label>
+                                </span>
+                                <input type="range" class="custom-range min" value="0" min="0" max="10" id="rangeQuartosMin">
+                                <br />
+                                <input type="range" class="custom-range max" value="10" min="0" max="10" id="rangeQuartosMax">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banheiros -->
+                    <div class="col-12 col-lg-3 box-unidade">
+                        <div class="filtro-title">
+                            <div>
+                                <span><i class="fas fa-bath"></i><span>&nbsp;Banheiros</span></span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-basis">
+                            <div class="multipleRange disabled" id="BanheirosSwitch">
+                                <span class="range-val">
+                                    <label class="range-val-min"></label>
+                                    <label class="range-val-junction"></label>
+                                    <label
+                                        class="range-val-max">
+                                    </label>
+                                </span>
+                                <input type="range" class="custom-range rangeBanheiros min" value="0" min="0" max="10" id="rangeBanheirosMin">
+                                <br />
+                                <input type="range" class="custom-range rangeBanheiros max" value="10" min="0" max="10" id="rangeBanheirosMax">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vagas Garagem -->
+                    <div class="col-12 col-lg-3 box-unidade">
+                        <div class="filtro-title">
+                            <div>
+                                <span><i class="fas fa-car"></i><span>&nbsp;Vagas na Garagem</span></span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-basis">
+                            <div class="multipleRange disabled" id="GaragemSwitch">
+                                <span class="range-val">
+                                    <label class="range-val-min"></label>
+                                    <label class="range-val-junction"></label>
+                                    <label
+                                        class="range-val-max">
+                                    </label>
+                                </span>
+                                <input type="range" class="custom-range min" value="0" min="0" max="10" id="rangeGaragemMin">
+                                <br />
+                                <input type="range" class="custom-range max" value="10" min="0" max="10" id="rangeGaragemMax">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tamanho -->
+                    <div class="col-12 col-lg-3 box-unidade">
+                        <div class="filtro-title">
+                            <div>
+                                <span><i class="fas fa-ruler-horizontal"></i><span>&nbsp;Tamanho (m²)</span></span>
+                            </div>
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-basis">
+                            <div class="multipleRange disabled" id="TamanhoSwitch">
+                                <span class="range-val">
+                                    <label class="range-val-min"></label>
+                                    <label class="range-val-junction"></label>
+                                    <label
+                                        class="range-val-max">
+                                    </label>
+                                </span>
+                                <input type="range" class="custom-range min" value="0" step="5" min="0" max="500" id="rangeTamanhoMin">
+                                <br />
+                                <input type="range" class="custom-range max" value="500" step="5" min="0" max="500" id="rangeTamanhoMax">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="nav-main" class="w-100 pt-4">
+            <div class="advanced-search">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4 groupEstado">
+                                <label class="basic-url"><i class="fas fa-map-marked-alt"></i>&nbsp;Estado:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlEstado">
+                                        <option value="0" selected>-- Todos --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupCidade">
+                                <label class="basic-url"><i class="fas fa-map-marked-alt"></i>&nbsp;Cidade:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlCidade">
+                                        <option value="0" selected>-- Todas --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupBairro">
+                                <label class="basic-url"><i class="fas fa-map-marked-alt"></i>&nbsp;Bairro:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlBairro">
+                                        <option value="0" selected>-- Todos --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupLocacao">
+                                <label class="basic-url"><i class="fas fa-handshake"></i>&nbsp;Negociação:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlLocacao">
+                                        <option value="0" selected>-- Todos --</option>
+                                        <option value="1">Venda</option>
+                                        <option value="2">Locação</option>
+                                        <option value="4">Venda/Locação</option>
+                                        <option value="3">Permuta</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupTipoImovel">
+                                <label class="basic-url"><i class="fas fa-home"></i>&nbsp;Tipo de Imóvel:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlTipoImovel">
+                                        <option value="0" selected>-- Todos --</option>
+                                        <option value="1">Casa</option>
+                                        <option value="2">Apartamento</option>
+                                        <option value="3">Kitnet</option>
+                                        <option value="4">Flat</option>
+                                        <option value="5">Cobertura</option>
+                                        <option value="6">Mansão</option>
+                                        <option value="7">Casas de praia</option>
+                                        <option value="8">Casas de campo</option>
+                                        <option value="9">Loft</option>
+                                        <option value="10">Loja</option>
+                                        <option value="11">Sala Comercial</option>
+                                        <option value="12">Depósito</option>
+                                        <option value="13">Terreno</option>
+                                        <option value="14">Chácara</option>
+                                        <option value="15">Salão Comercial</option>
+                                        <option value="16">Galpão</option>
+                                        <option value="17">Resorts</option>
+                                        <option value="18">Área de Terras</option>
+                                        <option value="19">Sala</option>
+                                        <option value="20">Prédio</option>
+                                        <option value="21">Lote</option>
+                                        <option value="22">Sítio</option>
+                                        <option value="23">Fazenda</option>
+                                        <option value="24">Casa em condomínio</option>
+                                        <option value="25">Studio</option>
+                                        <option value="26">Lote em condomínio</option>
+                                        <option value="27">Sobrado</option>
+                                        <option value="28">Pousada</option>
+                                        <option value="29">Hotel</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupValor">
+                                <label class="basic-url"><i class="fas fa-hand-holding-usd"></i>&nbsp;Valor:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlValor">
+                                        <option value="0" selected>-- Todos --</option>
+                                        <option value="1">Até R$ 100.000</option>
+                                        <option value="2">R$ 100.000 até R$ 200.000</option>
+                                        <option value="3">R$ 200.000 até R$ 300.000</option>
+                                        <option value="4">R$ 300.000 até R$ 450.000</option>
+                                        <option value="5">R$ 450.000 até R$ 700.000</option>
+                                        <option value="6">R$ 700.000 até R$ 1.000.000</option>
+                                        <option value="7">Acima de R$ 1.000.000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 groupFaseImovel">
+                                <label class="basic-url"><i class="fas fa-clipboard-check"></i>&nbsp;Fase do imóvel:</label>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="ddlFaseImovel">
+                                        <option value="-1" selected>Todos</option>
+                                        <option value="0">Pronto</option>
+                                        <option value="1">Lançamento</option>
+                                        <option value="2">Em construção</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- TODO -->
+                            <div class="col-12 text-center pb-3" style="display: none; font-weight: 500; font-size: 14px; cursor: pointer; /* opacity: 0.7; */">
+                                <i class="fas fa-plus"></i>&nbsp;Mais Filtros<hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-12 text-center pt-4 pb-4">
+                <button class="btn btn-elegant" onclick="pesquisarImoveis()">
+                    <i class="fas fa-search"></i>&nbsp;Pesquisar imóveis
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function buscarCategoriasSelecionadas() {
+        var listaCategoriasImoveis = [];
+        $(".filtro-title-categoria .filtro-tipoImovel.tag").each(function () {
+            if ($(this).hasClass('ativo'))
+                listaCategoriasImoveis.push($(this).attr("catim-id"));
+        });
+        return listaCategoriasImoveis;
+    }
+
+    function pesquisarImoveisDetalhes() {
+        var quartosMax = $(".row-filtro-tipoImovel #rangeQuartosMax").val() + "";
+        var quartosMin = $(".row-filtro-tipoImovel #rangeQuartosMin").val() + "";
+        var banheirosMax = $(".row-filtro-tipoImovel #rangeBanheirosMax").val() + "";
+        var banheirosMin = $(".row-filtro-tipoImovel #rangeBanheirosMin").val() + "";
+        var garagemMax = $(".row-filtro-tipoImovel #rangeGaragemMax").val() + "";
+        var garagemMin = $(".row-filtro-tipoImovel #rangeGaragemMin").val() + "";
+        var tamanhoMax = $(".row-filtro-tipoImovel #rangeTamanhoMax").val() + "";
+        var tamanhoMin = $(".row-filtro-tipoImovel #rangeTamanhoMin").val() + "";
+        var listaFiltroCategorias = buscarCategoriasSelecionadas();
+
+        var url = "";
+
+
+        if (quartosMax && quartosMax != '' && quartosMin && quartosMin != '' && !$("#QuartosSwitch").hasClass("disabled")) {
+            url += "&qx=" + quartosMax + "&qm=" + quartosMin;
+        }
+        if (banheirosMax && banheirosMax != '' && banheirosMin && banheirosMin != '' && !$("#BanheirosSwitch").hasClass("disabled")) {
+            url += "&bx=" + banheirosMax + "&bm=" + banheirosMin;
+        }
+        if (garagemMax && garagemMax != '' && garagemMin && garagemMin != '' && !$("#GaragemSwitch").hasClass("disabled")) {
+            url += "&gx=" + garagemMax + "&gm=" + garagemMin;
+        }
+        if (tamanhoMax && tamanhoMax != '' && tamanhoMin && tamanhoMin != '' && !$("#TamanhoSwitch").hasClass("disabled")) {
+            url += "&tx=" + tamanhoMax + "&tm=" + tamanhoMin;
+        }
+
+        if (listaFiltroCategorias.length > 0) {
+            url += "&cn=";
+            for (var i = 0; i < listaFiltroCategorias.length; i++) {
+                if (i > 0) {
+                    url += "-";
+                }
+                url += listaFiltroCategorias[i];
+            }
+        }
+
+        return url;
+    }
+</script>
+<script type="text/javascript">
+    function atualizarValor(obj, operation) {
+        //multipleRange
+        if (operation) {
+            atualizarValorMin(obj);
+        } else {
+            atualizarValorMax(obj);
+        }
+    }
+
+    function atualizarValorMin(obj) {
+        var value = obj.children(".custom-range.min").val();
+        obj.children(".custom-range.max").attr("min", value);
+        atualizarRestante(obj);
+
+    }
+
+    function atualizarValorMax(obj) {
+        var value = obj.children(".custom-range.max").val();
+        obj.children(".custom-range.min").attr("max", value);
+        atualizarRestante(obj);
+    }
+
+    function atualizarRestante(obj) {
+        var valueMin = obj.children(".custom-range.min").val();
+        var valueMax = obj.children(".custom-range.max").val();
+        if (valueMin != valueMax) {
+            obj.children(".range-val").children(".range-val-min").text(valueMin);
+            obj.children(".range-val").children(".range-val-max").text(valueMax);
+            obj.children(".range-val").children(".range-val-junction").html("&nbsp;à&nbsp;");
+        } else {
+            obj.children(".range-val").children(".range-val-junction").html(valueMax);
+            obj.children(".range-val").children(".range-val-min").html("");
+            obj.children(".range-val").children(".range-val-max").html("");
+        }
+    }
+
+    $(document).ready(function () {
+        $(".range-val .range-val-junction").text("Todos");
+
+        $(".custom-range").change(function () {
+            atualizarValor($(this).parent(), $(this).hasClass("min"));
+        })
+        $(".custom-range").mousemove(function () {
+            atualizarValor($(this).parent(), $(this).hasClass("min"));
+        })
+        $(".switch").mouseup(function (event) {
+            $(this).parent().parent().next().children(".multipleRange").children(".range-val").children(".range-val-junction").text("Todos");
+            $(this).parent().parent().next().children(".multipleRange").children(".range-val").children(".range-val-min").html("");
+            $(this).parent().parent().next().children(".multipleRange").children(".range-val").children(".range-val-max").html("");
+            $(this).parent().parent().next().children(".multipleRange").toggleClass('disabled');
+        });
+
+        $("#selNegociacao").change(function () {
+            if ($("#selNegociacao").val() == 0) {
+                $(".box-unidade-venda").addClass("hidden");
+                $(".box-unidade-locacao").addClass("hidden");
+                $(".box-unidade-permuta").addClass("hidden");
+            } else if ($("#selNegociacao").val() == 1) {
+                $(".box-unidade-venda").removeClass("hidden");
+                $(".box-unidade-locacao").addClass("hidden");
+                $(".box-unidade-permuta").addClass("hidden");
+            } else if ($("#selNegociacao").val() == 2) {
+                $(".box-unidade-venda").addClass("hidden");
+                $(".box-unidade-locacao").removeClass("hidden");
+                $(".box-unidade-permuta").addClass("hidden");
+            } else if ($("#selNegociacao").val() == 3) {
+                $(".box-unidade-locacao").addClass("hidden");
+                $(".box-unidade-venda").addClass("hidden");
+                $(".box-unidade-permuta").removeClass("hidden");
+            }
+        });
+    });
+</script>
+<script>
+    var listaEstados, listaCidades, listaBairros;
+
+    $(document).ready(function () {
+        listaEstados = $.parseJSON($('.hfEstados').val());
+        listaCidades = $.parseJSON($('.hfCidades').val());
+        listaBairros = $.parseJSON($('.hfBairros').val());
+
+        for (index = 0; index < listaEstados.length; index++) {
+            var estado = listaEstados[index];
+            var option = new Option(estado.nome, estado.id);
+            $('#ddlEstado').append(option);
+        }
+
+        $('#ddlEstado').change(function () {
+            pesquisarCidades();
+        });
+        if ($('.hfEstadoSelecionado').val() != '')
+            $('#ddlEstado').val($('.hfEstadoSelecionado').val());
+        pesquisarCidades();
+
+        $('#ddlCidade').change(function () {
+            pesquisarBairros();
+        });
+        if ($('.hfCidadeSelecionada').val() != '')
+            $('#ddlCidade').val($('.hfCidadeSelecionada').val());
+        pesquisarBairros();
+
+        if ($('.hfBairroSelecionado').val() != '')
+            $('#ddlBairro').val($('.hfBairroSelecionado').val());
+        if ($('.hfLocacaoSelecionada').val() != '')
+            $('#ddlLocacao').val($('.hfLocacaoSelecionada').val());
+        if ($('.hfTipoImovelSelecionado').val() != '')
+            $('#ddlTipoImovel').val($('.hfTipoImovelSelecionado').val());
+        if ($('.hfRangeSelecionado').val() != '')
+            $('#ddlValor').val($('.hfRangeSelecionado').val());
+
+    });
+
+    function pesquisarCidades() {
+        $('#ddlCidade').find('option').remove();
+        var option = new Option('-- Todas --', '0');
+        $('#ddlCidade').append(option);
+        var estado = $('#ddlEstado').val();
+        if (estado != '' && estado != '0') {
+            for (index = 0; index < listaCidades.length; index++) {
+                var cidade = listaCidades[index];
+                if (cidade.id_estado == estado) {
+                    option = new Option(cidade.nome, cidade.id);
+                    $('#ddlCidade').append(option);
+                }
+            }
+        }
+        pesquisarBairros();
+    }
+
+    function pesquisarBairros() {
+        $('#ddlBairro').find('option').remove();
+        var option = new Option('-- Todos --', '0');
+        $('#ddlBairro').append(option);
+        var cidade = $('#ddlCidade').val();
+        if (cidade != '' && cidade != '0') {
+            for (index = 0; index < listaBairros.length; index++) {
+                var bairro = listaBairros[index];
+                if (bairro.id_cidade == cidade) {
+                    option = new Option(bairro.nome, bairro.id);
+                    $('#ddlBairro').append(option);
+                }
+            }
+        }
+    }
+
+    function pesquisarImoveis() {
+        var estado = $('#ddlEstado').val();
+        var cidade = $('#ddlCidade').val();
+        var bairro = $('#ddlBairro').val();
+        var negociacao = $('#ddlLocacao').val();
+        var tipoImovel = $('#ddlTipoImovel').val();
+        var valor = $('#ddlValor').val();
+        var faseImovel = $('#ddlFaseImovel').val();
+
+        var url = "Publicacoes.aspx?ei=true&eix=3";
+        if (estado && estado != '' && estado != '0')
+            url += ("&est=" + estado);
+        if (cidade && cidade != '' && cidade != '0')
+            url += ("&cid=" + cidade);
+        if (bairro && bairro != '' && bairro != '0')
+            url += ("&bairro=" + bairro);
+        if (negociacao && negociacao != '' && negociacao != '0')
+            url += ("&neg=" + negociacao);
+        if (tipoImovel && tipoImovel != '' && tipoImovel != '0')
+            url += ("&ti=" + tipoImovel);
+        if (valor && valor != '' && valor != '0')
+            url += ("&vl=" + valor);
+        if (faseImovel && faseImovel != '')
+            url += ("&fi=" + faseImovel);
+
+        window.location.href = url + pesquisarImoveisDetalhes();
+    }
+</script>
+
+    <section style="overflow: hidden;" id="main-content">
+        
+    <div class="container-fluid" style="padding: 10px 15px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-fluid" style="padding: 10px 0;">
+                    <div class="row">
+                        <div class="container" style="padding: 10px 0;">
+                            <div class="row">
+                                <div class="col-12">
+                                    
+
+<div class="container_conteudo_informativo">
+        <!-- Modal -->
+<div aria-hidden="true" aria-labelledby="TituloModalCentralizado" class="modal fade" id="ExemploModalCentralizado" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="TituloModalCentralizado"><b>Aluguel</b></h4>
+<button aria-label="Fechar" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
+<div class="modal-body">
+<p>Identidade, CPF, Comprovante de resid&ecirc;ncia, Comprovante de Renda.<br />
+Parcelamos o dep&oacute;sito cau&ccedil;&atilde;o em at&eacute; 10x.</p>
+</div>
+
+<div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal" type="button">Fechar</button></div>
+</div>
+</div>
+</div>
+<!-- FIM MODALL-->
+<style type="text/css">.novomodelo .content {transition: 0.3s; box-shadow: 0 10px 10px 0 rgba(0,0,0,0.19); margin-bottom:25px; padding:15px;}
+  .novomodelo .content {transition: 0.3s; background-color 0.3s;}
+    .novomodelo .content:hover {transform:translateY(-8px) !important;     box-shadow:0 20px 30px 0px rgba(0,0,0,0.19) }
+ .text-comp {    text-align: center;    padding: 10px 20px;  }
+</style>
+<p style="text-align: center;"><span style="font-size: 28px;">Os melhores neg&oacute;cios Imobili&aacute;rio<b> VOC&Ecirc; </b>encontra<b> AQUI!!</b></span><br />
+&nbsp;</p>
+
+<p style="text-align: center;"><span style="color:#0a2f0c;"><span style="font-size:36px;"></span></span><span style="font-size:20px;"></span></p>
+
+<div class="container">
+<div class="btgrid novomodelo">
+<div class="row row-1">
+<div class="col col-md-3">
+<div class="content">
+<p style="text-align: center;"><span style="font-size:16px;"><a href="#"><img class="img-thumbnail" src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/53371419-4.jpg?=40" style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+<p style="text-align: center;"><strong>Avalia&ccedil;&atilde;o de Imoveis</strong></p>
+</div>
+</div>
+
+<div class="col col-md-3">
+<div class="content">
+<p style="text-align: center;"><span style="font-size:16px;"><a data-target="#ExemploModalCentralizado" data-toggle="modal"> <img class="img-thumbnail" src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/598fe92c-3.jpg?=40" style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+<p style="text-align: center;"><strong>Documenta&ccedil;&atilde;o&nbsp;</strong></p>
+</div>
+</div>
+
+<div class="col col-md-3">
+<div class="content">
+<p style="text-align: center;"><span style="font-size:16px;"><a href=""><img class="img-thumbnail" src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/318fb025-3.jpg?=40" style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+<p style="text-align: center;"><strong>Per&iacute;cia Imobili&aacute;ria</strong></p>
+</div>
+</div>
+
+<div class="col col-md-3">
+<div class="content">
+<p style="text-align: center;"><span style="font-size:16px;"><a href="/Publicacao.aspx?id=180409"><img class="img-thumbnail" src="https://www.cache2net.com//Repositorio/6436/Conteudos/30452/4c94ecc6-8.jpg?=40" style="width: 100%; border-radius: 50%;" /></a></span></p>
+
+<p style="text-align: center;"><strong>Simule seu Financiamento</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            
+
+<style>
+    .imovel-col-border-bottom {
+        border-bottom: 1px solid;
+    }
+
+    .title-tipoImoveis {
+        font-size: 44px;
+        padding: 30px 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+
+        .title-tipoImoveis .icon-bordered-circle {
+            font-size: 25px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 2px solid;
+            border-radius: 100%;
+            padding-top: 4px;
+            margin-right: 10px;
+        }
+
+    .footer-tipoImoveis {
+        margin-top: 30px;
+        position: relative;
+    }
+
+        .footer-tipoImoveis:after {
+            position: absolute;
+            content: ' ';
+            bottom: 0;
+            right: 0px;
+            left: 0px;
+            border: 3px solid;
+        }
+
+    @media screen and (max-width:992px) {
+        .title-tipoImoveis {
+            font-size: 30px;
+        }
+    }
+</style>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-tipoImoveis">
+                        <span class="icon-bordered-circle"><i class="fas fa-home"></i></span>&nbsp;residencial
+                    </div>
+                    <div id="ctl00_ContentPlaceHolderCorpo_ControlListagemTipoImoveis_rptDestaques_ctl00_ControlListagemImoveisDestaque_pnlExibirStyle">
+	
+    
+</div>
+    <style>
+        .row-listagem {
+            padding-bottom: 30px 0;
+        }
+
+        .arrow-layer {
+            display: none;
+        }
+
+        .box-imovel {
+            padding: 0;
+        }
+
+            .box-imovel > div {
+                background: #fff;
+                transform: scale(0.95);
+                box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.7);
+                padding: 0px;
+                transition: 0.6s;
+                border: 1px solid #eee;
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+            .box-imovel:hover > div {
+                box-shadow: 0 7px 15px -1px rgba(0, 0, 0, 0.2);
+            }
+
+            .box-imovel .img-imovel {
+                background-size: cover !important;
+                background-position: center !important;
+                height: 200px;
+                background-repeat: no-repeat !important;
+            }
+
+
+        .box-imovel-description {
+            padding: 20px 20px 0px 20px;
+            color: #555;
+            min-height: 150px;
+        }
+
+            .box-imovel-description .bx-mvl-ddr {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .box-imovel-description .bx-mvl-bairro {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .box-imovel-description .bx-mvl-titulo {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                line-height: 1.1em;
+                height: 60px;
+                overflow: hidden;
+                margin-top: 8px;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .box-imovel-description .bx-mvl-tipo-imovel {
+                font-size: 14px;
+                text-align: left;
+                min-height: 50px;
+            }
+
+        .bx-mvl-payment {
+            display: block;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            color: #555;
+            margin: 20px 0 10px;
+        }
+
+        .box-imovel-description .bx-mvl-detail-icons {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .bx-mvl-detail-icons > span {
+            padding: 10px 0;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            width: 23%;
+            font-size: 16px;
+            border-radius: 0;
+            color: #555;
+        }
+
+            .bx-mvl-detail-icons > span:last-child {
+                margin: 0;
+            }
+
+            .bx-mvl-detail-icons > span > span {
+                font-weight: 300;
+                display: block;
+                font-size: 14px;
+                padding-bottom: 3px;
+            }
+
+        .btn-imovel-detail {
+            border-right: 1px solid #e4e4e4;
+        }
+
+            .btn-imovel-detail:last-child {
+                border-right: 0px solid #e4e4e4;
+            }
+
+        .box-imovel .img-imovel {
+            position: relative;
+            border-bottom: 2px solid;
+        }
+
+            .box-imovel .img-imovel > .layer-destaque {
+                padding: 4px 20px;
+                border-radius: 0 40px 0 0;
+                font-weight: 600;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+            }
+
+        .box-imovel .box-imovel-description .bx-mvl-ddr .fas,
+        .box-imovel .box-imovel-description .bx-mvl-tipo-imovel .fas {
+            width: 20px;
+            text-align: center;
+            margin-right: 3px;
+            position: relative;
+        }
+        .img-imovel img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+        }
+    </style>
+
+<div class="container">
+    <div class="row row-listagem row-listagem-slide" id="imovelSlidectl00_ContentPlaceHolderCorpo_ControlListagemTipoImoveis_rptDestaques_ctl00_ControlListagemImoveisDestaque" >
+        <div class="col-12">
+            <div class="lista-imoveis row">
+                
+                
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=6358" data-codigo='5369' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 leftbase">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/6358/Post para Instagram para Imobiliaria (12).webp?=2208858-4"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Campo Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Casa à Venda  - 2 Quartos   Condomínio Villagio do Campo -Campo Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$230.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>2</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>2</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>1</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>89m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=6359" data-codigo='2563' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 prebefore">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/6359/Post para Instagram para Imobiliaria (64).webp?=2208919-5"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Flamengo</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span> Vendo Excelente Apartamento - Flamengo RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$1.000.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>1</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>3</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>3</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>0m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=6362" data-codigo='31646' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 before">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/6362/Post para Instagram para Imobiliaria (44).webp?=2209521-5"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Vargem Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Casa à Venda - 4 Quartos Suítes -  Vargem Grande RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$745.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>2</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>4</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>6</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>0m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=4737" data-codigo='' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 main">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/4737/WhatsAppImage2022-05-15at21.27.332.jpeg?=1807569-3"/>
+                                    <div class="layer-destaque"><span>Casa&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>ICARAÍ</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Niterói</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Excelente Apartamento - Próx. a Praia de Icaraí - Niteroí RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$850.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>1</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>3</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>2</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>78m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=6361" data-codigo='56369' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 after">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/6361/Post para Instagram para Imobiliaria (91).webp?=2209328-1"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Vargem Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Prédio Fechado ou Unidades á Venda - Vargem Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;">a partir de </span><span><div>&nbsp;</div>R$82.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>0</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>1</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>1</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>0m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=4969" data-codigo='' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 posafter">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/4969/WhatsApp Image 2022-09-19 at 10.43.44 (1).webp?=1975886-1"/>
+                                    <div class="layer-destaque"><span>Casa&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Recreio dos Bandeirantes</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Casa à Venda - 02 Quartos (1 suíte) - Recreio dos Bandeirantes</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$460.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>1</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>2</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>2</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>0m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=5250" data-codigo='' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 rightbase">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/5250/WhatsApp Image 2022-08-08 at 12.45.27.webp?=1928907-8"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Campo Grande</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>OPORTUNIDADE ! Excelente Casa à Venda - 2 Quartos(suítes) </span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$650.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>3</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>2</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>3</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>260m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=5904" data-codigo='002' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 ">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net3.com//Repositorio/6436/Imoveis/5904/Post para Instagram para Imobiliaria (4).webp?=2107002-1"/>
+                                    <div class="layer-destaque"><span>Apartamento&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Vila Maria Helena</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Duque de Caxias</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Vila á Venda - Ideal para Investimento - Chácaras Arcampo - Caxias</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$270.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>0</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>0</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>0</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>350m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+            </div>
+            <div class="row">
+                <div class="col-12 arrow-layer">
+                    <div class="row">
+                        <div class="col-6 text-left arrow-imovel arrow-imovel-left">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="col-6 text-right arrow-imovel arrow-imovel-right">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="footer-tipoImoveis">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imovel-col-border-bottom"></div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-tipoImoveis">
+                        <span class="icon-bordered-circle"><i class="fas fa-home"></i></span>&nbsp;Comercial 
+                    </div>
+                    <div id="ctl00_ContentPlaceHolderCorpo_ControlListagemTipoImoveis_rptDestaques_ctl01_ControlListagemImoveisDestaque_pnlExibirStyle">
+	
+    
+</div>
+    <style>
+        .row-listagem {
+            padding-bottom: 30px 0;
+        }
+
+        .arrow-layer {
+            display: none;
+        }
+
+        .box-imovel {
+            padding: 0;
+        }
+
+            .box-imovel > div {
+                background: #fff;
+                transform: scale(0.95);
+                box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.7);
+                padding: 0px;
+                transition: 0.6s;
+                border: 1px solid #eee;
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+            .box-imovel:hover > div {
+                box-shadow: 0 7px 15px -1px rgba(0, 0, 0, 0.2);
+            }
+
+            .box-imovel .img-imovel {
+                background-size: cover !important;
+                background-position: center !important;
+                height: 200px;
+                background-repeat: no-repeat !important;
+            }
+
+
+        .box-imovel-description {
+            padding: 20px 20px 0px 20px;
+            color: #555;
+            min-height: 150px;
+        }
+
+            .box-imovel-description .bx-mvl-ddr {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .box-imovel-description .bx-mvl-bairro {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .box-imovel-description .bx-mvl-titulo {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                line-height: 1.1em;
+                height: 60px;
+                overflow: hidden;
+                margin-top: 8px;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .box-imovel-description .bx-mvl-tipo-imovel {
+                font-size: 14px;
+                text-align: left;
+                min-height: 50px;
+            }
+
+        .bx-mvl-payment {
+            display: block;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            color: #555;
+            margin: 20px 0 10px;
+        }
+
+        .box-imovel-description .bx-mvl-detail-icons {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .bx-mvl-detail-icons > span {
+            padding: 10px 0;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            width: 23%;
+            font-size: 16px;
+            border-radius: 0;
+            color: #555;
+        }
+
+            .bx-mvl-detail-icons > span:last-child {
+                margin: 0;
+            }
+
+            .bx-mvl-detail-icons > span > span {
+                font-weight: 300;
+                display: block;
+                font-size: 14px;
+                padding-bottom: 3px;
+            }
+
+        .btn-imovel-detail {
+            border-right: 1px solid #e4e4e4;
+        }
+
+            .btn-imovel-detail:last-child {
+                border-right: 0px solid #e4e4e4;
+            }
+
+        .box-imovel .img-imovel {
+            position: relative;
+            border-bottom: 2px solid;
+        }
+
+            .box-imovel .img-imovel > .layer-destaque {
+                padding: 4px 20px;
+                border-radius: 0 40px 0 0;
+                font-weight: 600;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+            }
+
+        .box-imovel .box-imovel-description .bx-mvl-ddr .fas,
+        .box-imovel .box-imovel-description .bx-mvl-tipo-imovel .fas {
+            width: 20px;
+            text-align: center;
+            margin-right: 3px;
+            position: relative;
+        }
+        .img-imovel img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+        }
+    </style>
+
+<div class="container">
+    <div class="row row-listagem row-listagem-slide" id="imovelSlidectl00_ContentPlaceHolderCorpo_ControlListagemTipoImoveis_rptDestaques_ctl01_ControlListagemImoveisDestaque" >
+        <div class="col-12">
+            <div class="lista-imoveis row">
+                
+                
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=2784" data-codigo='VGPCL-01' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 leftbase">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net.com//Repositorio/6436/Imoveis/2784/Arquivo_001.jpeg?=1257004-4"/>
+                                    <div class="layer-destaque"><span>Salão Comercial&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Colégio</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Rio de Janeiro</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Galpão à Venda  160m²   Colégio - RJ </span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$375.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>0</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>0</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>1</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>160m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <a aria-label="Imóvel" href="Publicacao.aspx?idImovel=2489" data-codigo='VTRCF-01' class="box-imovel col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 prebefore">
+                            <div>
+                                <div class="img-imovel">
+                                    <img alt="Imagem Imovel" loading="lazy" src="https://www.cache2net.com//Repositorio/6436/Imoveis/2489/40989235-a.jpeg?=1157838-2"/>
+                                    <div class="layer-destaque"><span>Terreno&nbsp;|&nbsp;Venda</span></div>
+                                </div>
+                                <div class="box-imovel-description">
+                                    <div class="bx-mvl-tipo-imovel">
+                                        <i class="fas fa-home"></i><span>Centro</span>
+                                    </div>
+                                    <div class="bx-mvl-ddr">
+                                        <span class="bx-mvl-ddr-city"><i class="fas fa-map-marker-alt"></i>Cabo Frio</span> - <span class="bx-mvl-ddr-uf">RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-titulo">
+                                        <span>Terreno à Venda 180,24m²       Centro - Cabo Frio - RJ</span>
+                                    </div>
+                                    <div class="bx-mvl-payment">
+                                        <span style="font-size: 12px;"></span><span><div>&nbsp;</div>R$550.000,00</span>
+                                    </div>
+                                </div>
+
+                                <hr style="margin: 0 0 10px 0;" />
+                                <div class="bx-mvl-detail-icons">
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-garagem"><span>0</span><i class="fas fa-car"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-quartos"><span>0</span><i class="fas fa-bed"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-banheiros"><span>0</span><i class="fas fa-bath"></i></span>
+                                    <span class="btn-imovel-detail fa-2x bx-mvl-detail-espaco"><span>180m²</span><i class="fas fa-ruler-horizontal"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    
+            </div>
+            <div class="row">
+                <div class="col-12 arrow-layer">
+                    <div class="row">
+                        <div class="col-6 text-left arrow-imovel arrow-imovel-left">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="col-6 text-right arrow-imovel arrow-imovel-right">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="footer-tipoImoveis">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imovel-col-border-bottom"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="mapa">
+        
+
+
+<div id="googleMap">
+    <iframe src="https://maps.google.com/maps?q=-22.8699922,-43.3251904&amp;hl=pt;z=14&amp;output=embed" style="width: 100%; height: 480px; border: 0;"></iframe>
+</div>
+
+    </section>
+
+    </section>
+    <footer>
+        <div class="camada">
+            <div class="footer__mainbar container pt-3 pb-3">
+                <div class="row footer-details">
+                    <div class="col-12 col-md-4">
+                        <p class="footer__title">
+                            <i class="fas fa-home"></i>&nbsp;Imóveis Residenciais
+                        </p>
+                        <div class="footer-txt">
+                            <p>
+                                <a href="Publicacoes.aspx?ei=true&ti=1">- Casa</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=2">- Apartamento</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=3">- Kitnet</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=4">- Flat</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=5">- Cobertura</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=6">- Mansão</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=7">- Casa de Praia</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=8">- Casa de Campo</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=9">- Loft</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=14">- Chácara</a><br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <p class="footer__title">
+                            <i class="fas fa-store-alt"></i>&nbsp;Imóveis Comerciais
+                        </p>
+                        <div class="footer-txt">
+                            <p>
+                                <a href="Publicacoes.aspx?ei=true&ti=10">- Loja</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=11">- Sala Comercial</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=15">- Salão Comercial</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=16">- Galpão</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=12">- Depósito</a>
+                                <a href="Publicacoes.aspx?ei=true&ti=25">- Stúdio</a><br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <p class="footer__title">
+                            <i class="far fa-plus-square"></i>&nbsp;Outros
+                        </p>
+                        <div class="footer-txt">
+                            <p>
+                                <a href="Publicacoes.aspx?ei=true&ti=13">- Terreno</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=17">- Resorts</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=18">- Área de Terras</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=28">- Pousada</a><br />
+                                <a href="Publicacoes.aspx?ei=true&ti=29">- Hotel</a><br />
+                            </p>
+                        </div>
+                        <p class="footer__title">
+                            <i class="far fa-handshake"></i>&nbsp;Negociação
+                        </p>
+                        <div class="footer-txt">
+                            <p>
+                                <a href="Publicacoes.aspx?ei=true&neg=1">- Venda</a><br />
+                                <a href="Publicacoes.aspx?ei=true&neg=2">- Locação</a>
+                                <a href="Publicacoes.aspx?ei=true&neg=3">- Permuta</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer___mainbar-dados">
+                    <div class="col-md-4 footer__contato">
+                        <div class="footer__title">
+                            <i class="fas fa-phone"></i>&nbsp;Contato
+                        </div>
+                        <div class="footer__content">
+                            <div class="footer__contato-telefone mb-3">
+                                <div class="footer__contato-titulo">
+                                    <i class="fa fa-phone"></i>&nbsp;Telefone
+                                </div>
+                                (21) 98037-2416<br>(21) 98620-4325<br>
+                            </div>
+                            <div class="footer__contato-email mb-3">
+                                <div class="footer__contato-titulo">
+                                    <i class="fa fa-envelope"></i>&nbsp;Email
+                                </div>
+                                imobiliaria.tr@gmail.com
+                            </div>
+                            <div class="footer__contato-endereco mb-3">
+                                <div class="footer__contato-titulo">
+                                    <i class="fa fa-map-marked-alt"></i>&nbsp;Endereço
+                                </div>
+                                <a href = "https://www.google.com/maps/place/R.+Nicar%C3%A1gua,+630+-+Penha,+Rio+de+Janeiro+-+RJ,+21020-050/@-22.8379446,-43.2802301,17z/data=!3m1!4b1!4m6!3m5!1s0x997b97458fa9c9:0x6bfe3ada27f00c37!8m2!3d-22.8379446!4d-43.2802301!16s%2Fg%2F11c12lr3wf">Rua Nicarágua nº 630, Bloco 02, Sala 708, Penha, Rio de Janeiro, Cep: 21.020-050, Condomínio Faces Office, Mall e Residencial. </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footer__social">
+                        <div class="footer__title">
+                            <i class="far fa-heart"></i>&nbsp;Redes sociais
+                        </div>
+                        <div class="footer__content">
+                            <div class="icones-sociais-topo">
+                                
+                                        <div class="social facebook">
+                                            <a class='icone-facebook' target="_blank" href="https://www.facebook.com/tr.imobiliaria" aria-label="facebook">
+                                                <i class='fa-2x fab fa-facebook-f'></i>
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="social instagram">
+                                            <a class='icone-instagram' target="_blank" href="https://www.instagram.com/tr.imobiliaria/?igshid=nvhe4exxwr56" aria-label="instagram">
+                                                <i class='fa-2x fab fa-instagram'></i>
+                                            </a>
+                                        </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footer__social">
+                        <div class="footer__title">
+                            <i class="far fa-paper-plane"></i>&nbsp;Newsletter
+                        </div>
+                        <div class="footer__content">
+                            <div>
+                                Fique por dentro de todas as novidades preenchendo seu e-mail abaixo!
+                            </div>
+                            <input type="text" placeholder="E-mail" class="form-control form-control-sm input-newsletter"/>
+                            <button class="btn btn-info btn-sm btn-newsletter m-0 w-100 mt-1" onclick="EnviarNewsletter()">
+                                <i class="far fa-paper-plane"></i>&nbsp;Solicitar inscrição!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bootombar pb-2 pt-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="m-0">Todos os direitos reservados © 2023</p>
+                            <p class="mt-2 mb-1 footer__bootombar-acesso">
+                                <a href="https://secure.sitelock.com/public/verify/c2tiapps.com" target="_blank" aria-label="Site Lock">
+                                    <img alt="SiteLock" loading="lazy" width="100px" src="https://www.c2tiapps.com/imagens/sitelock.png" style="opacity: 1 !important;" />
+                                </a>
+                                <a class="access" href="https://www.2net.com.br/Sistema/Acesso/Login.aspx?emp=6436" target="_blank" aria-label="Gerenciador de Sites - 2net">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                                <a class="access" href="https://webmail.cerplan.com.br" target="_blank" aria-label="E-mail">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a class="access" href="https://www.c2ti.com.br" target="_blank" aria-label="C2TI">
+                                    <img  loading="lazy" class="logo_c2ti" src="https://www.c2tiapps.com/imagens/LogoC2.png" alt="C2TI Criação de Sites e Lojas Virtuais"/>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function EnviarNewsletter() {
+            var email = $('.input-newsletter').val();
+            var contato1 = 'imobiliaria.tr@gmail.com';
+            var contato2 = '';
+            var logo = 'https://cache2net.com/Repositorio/6436/Logo/99581a57-c.png';
+            var idSite = '6436';
+            var email_destino = '';
+            if (contato2 != '') {
+                email_destino = contato1 + ',' + contato2;
+            } else {
+                email_destino = contato1;
+            }
+
+            let rgx = new RegExp(/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i);
+            if (email == "" || !rgx.test(email)) {
+                alert('Preencha um email válido!');
+            } else {
+                //var lk = ("../../Sites/SendEmail.aspx?enviar_newsletter=T" +
+                var lk = ("https://www.c2tiapps.com/Sites/SendEmail.aspx?enviar_newsletter=T" +
+                    "&email_newsletter=" + (email) +
+                    "&email_destino=" + (email_destino) +
+                    "&logo=" + (logo) +
+                    "&idSite=" + idSite)
+                    + "&paginaRedirecionamento=" + window.location.href;
+                window.location.href = lk;
+            }
+        }
+    </script>
+
+    <div class="script-extra">
+        <script src="https://www.c2tiapps.com/sites/028/Scripts/ScriptMod.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script src="https://www.c2tiapps.com/Utilitarios/lightbox/js/lightbox.min.js"></script>
+        <script src="https://www.c2tiapps.com/Scripts/mask.js"></script>
+        <script src="https://www.c2tiapps.com/Scripts/jquery.mask.js"></script>
+        <script src="https://www.c2tiapps.com/Scripts/Funcoes-2.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main_pt-PT.js"></script>
+         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6426d93abba70e0012f39456&product=inline-share-buttons&source=platform" async="async"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit2() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'pt',
+                    autoDisplay: false
+                }, 'google_translate_element2');
+            }
+
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            eval(function (p, a, c, k, e, r) {
+                e = function (c) {
+                    return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+                };
+                if (!''.replace(/^/, String)) {
+                    while (c--) r[e(c)] = k[c] || e(c);
+                    k = [function (e) {
+                        return r[e]
+                    }];
+                    e = function () {
+                        return '\\w+'
+                    };
+                    c = 1
+                };
+                while (c--)
+                    if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+                return p
+            }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+            /* ]]> */
+
+        </script>
+        <div id="google_translate_element2">
+            <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+                <div id=":0.targetLanguage">
+                    <select class="goog-te-combo" aria-label="Widget do Tradutor do idioma">
+                        <option value="">Selecionar idioma</option>
+                        <option value="af">Afrikaans</option>
+                        <option value="sq">Albanês</option>
+                        <option value="de">Alemão</option>
+                        <option value="am">Amárico</option>
+                        <option value="ar">Árabe</option>
+                        <option value="hy">Arménio</option>
+                        <option value="az">Azerbaijano</option>
+                        <option value="eu">Basco</option>
+                        <option value="bn">Bengali</option>
+                        <option value="be">Bielorusso</option>
+                        <option value="my">Birmanês</option>
+                        <option value="bs">Bósnio</option>
+                        <option value="bg">Búlgaro</option>
+                        <option value="kn">Canarim</option>
+                        <option value="ca">Catalão</option>
+                        <option value="kk">Cazaque</option>
+                        <option value="ceb">Cebuano</option>
+                        <option value="cs">Checo</option>
+                        <option value="ny">Chichewa</option>
+                        <option value="zh-CN">Chinês (Simplificado)</option>
+                        <option value="zh-TW">Chinês (Tradicional)</option>
+                        <option value="si">Cingalês</option>
+                        <option value="ko">Coreano</option>
+                        <option value="co">Corso</option>
+                        <option value="ht">Crioulo Haitiano</option>
+                        <option value="hr">Croata</option>
+                        <option value="ku">Curdo</option>
+                        <option value="da">Dinamarquês</option>
+                        <option value="sk">Eslovaco</option>
+                        <option value="sl">Esloveno</option>
+                        <option value="es">Espanhol</option>
+                        <option value="eo">Esperanto</option>
+                        <option value="et">Estónio</option>
+                        <option value="tl">Filipino</option>
+                        <option value="fi">Finlandês</option>
+                        <option value="fr">Francês</option>
+                        <option value="fy">Frísio</option>
+                        <option value="gd">Gaélico da Escócia</option>
+                        <option value="gl">Galego</option>
+                        <option value="cy">Galês</option>
+                        <option value="ka">Georgiano</option>
+                        <option value="el">Grego</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="ha">Haúça</option>
+                        <option value="haw">Havaiano</option>
+                        <option value="iw">Hebraico</option>
+                        <option value="hi">Hindu</option>
+                        <option value="hmn">Hmong</option>
+                        <option value="nl">Holandês</option>
+                        <option value="hu">Húngaro</option>
+                        <option value="ig">Ibo</option>
+                        <option value="yi">Iídiche</option>
+                        <option value="id">Indonésio</option>
+                        <option value="en">Inglês</option>
+                        <option value="yo">Ioruba</option>
+                        <option value="ga">Irlandês</option>
+                        <option value="is">Islandês</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">Japonês</option>
+                        <option value="jw">Javanês</option>
+                        <option value="km">Khmer</option>
+                        <option value="lo">Laosiano</option>
+                        <option value="la">Latim</option>
+                        <option value="lv">Letão</option>
+                        <option value="lt">Lituano</option>
+                        <option value="lb">Luxemburguês</option>
+                        <option value="mk">Macedónio</option>
+                        <option value="ml">Malaiala</option>
+                        <option value="ms">Malaio</option>
+                        <option value="mg">Malgaxe</option>
+                        <option value="mt">Maltês</option>
+                        <option value="mi">Maori</option>
+                        <option value="mr">Marata</option>
+                        <option value="mn">Mongol</option>
+                        <option value="ne">Nepalês</option>
+                        <option value="no">Norueguês</option>
+                        <option value="ps">Pastó</option>
+                        <option value="fa">Persa</option>
+                        <option value="pl">Polaco</option>
+                        <option value="pa">Punjabi</option>
+                        <option value="ky">Quirguistanês</option>
+                        <option value="ro">Romeno</option>
+                        <option value="ru">Russo</option>
+                        <option value="sm">Samoano</option>
+                        <option value="sr">Sérvio</option>
+                        <option value="st">Sesotho</option>
+                        <option value="sn">Shona</option>
+                        <option value="sd">Sindi</option>
+                        <option value="so">Somali</option>
+                        <option value="sw">Suaíli</option>
+                        <option value="su">Sudanês</option>
+                        <option value="sv">Sueco</option>
+                        <option value="th">Tailandês</option>
+                        <option value="tg">Tajique</option>
+                        <option value="ta">Tâmil</option>
+                        <option value="te">Telugu</option>
+                        <option value="tr">Turco</option>
+                        <option value="uk">Ucraniano</option>
+                        <option value="ur">Urdu</option>
+                        <option value="uz">Usbeque</option>
+                        <option value="vi">Vietnamita</option>
+                        <option value="xh">Xhosa</option>
+                        <option value="zu">Zulu</option>
+                    </select>
+                </div>
+                Tecnologia do <span style="white-space: nowrap"><a class="goog-logo-link" href="https://translate.google.com" target="_blank">
+                    <img  loading="lazy"  src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Tradutor"/>Tradutor</a></span>
+            </div>
+
+        </div>
+    </div>
+     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6426d93abba70e0012f39456&product=inline-share-buttons&source=platform" async="async"></script>
+</body>
+</html>
+<script>console.log('%cCache de arquivo', 'background-color: #009688; padding:3px 15px')</script>

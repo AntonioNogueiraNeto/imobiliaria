@@ -256,7 +256,6 @@ body {
   /* carousel */
 
 .carousel-item{
-    margin-top: 100px;
     height: 32rem;
     background-color: #000;
     color: white;
